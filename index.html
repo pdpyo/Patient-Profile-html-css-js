@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Patient profile</title>
+    <link rel="stylesheet" href="./style2.css" />
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  </head>
+  <body>
+    <div class="container">
+      <div class="item" id="item1">
+        <div class="sBox" id="sBox1">
+          <div class="box" id="box1">              
+            <img src="./img/profilePic.jpg" alt="">
+            <div id="patient">
+                <p id="pName">Chanlder Bing</p>
+                <div class="genAge">
+                    <p id="pgender">Male</p>
+                    <p id="pAge">52 Years</p>
+                </div>
+            </div>
+          </div>
+          <div class="box" id="box2">
+            <div id="ID">
+              <span><i id="iconID" class="fas fa-3x fa-id-card id"></i></span>
+              <p id="NoID">123456</p>
+            </div>
+            <span id="dateTime"></span>
+          </div>
+        </div>
+        <div class="sBox" id="sBox2">
+          <div id="steth">
+            <i id="iconStethoscope" class="fas fa-4x fa-stethoscope smallBox"></i>
+          </div>
+          <div id="doc" class="smallBox">
+            <p class="doctor" id="docName">Dr. Drake Ramoray</p>
+            <p class="doctor">Neurosurgery</p>
+          </div>
+          <span id="vl"></span>
+          <div id="desc" class="smallBox">
+            <p>
+              Well, maybe I don't need your money. Wait, wait, I said maybe! We
+              were on a break! See? He's her lobster. Joey doesn't share food!
+              Hi, I'm Chandler. ... I wish I could, but I don't want to.Seven!
+              Pivot!
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="item" id="item2"> -->
+        <div id="iconsBox">
+          <div class="icons skyBlue" id="ward" onclick="alertWard()">
+              <i id="bigIcon" class="far fa-7x fa-hospital"></i>
+              <span>Ward</span>
+          </div>
+          <div class="icons violet" id="room" ondblclick="alertRoom()">
+              <i id="bigIcon" class="fas fa-7x fa-door-open"></i>
+              <span>Room</span>
+          </div>
+          <div class="icons yellow" id="bed" onclick="alertBed()">
+              <i id="bigIcon"" class="fas fa-7x fa-procedures"></i>
+              <span>Bed ID</span>
+          </div>
+          <div class="icons green" id="payment" onclick="alertPayment()">
+              <i id="bigIcon" class="fas fa-7x fa-money-check-alt"></i>
+              <span>Payment</span>
+          </div>
+        </div>
+      <!-- </div> -->
+      <div class="item" id="item3">
+        <div id="alert1" ></div>
+      </div>
+    </div>
+    <footer id="copyright"> <small>&copy; Copyright 2022, Pdp Yo</small> </footer>
+  </body>
+  <script src="./script/script.js"></script>
+</html>
